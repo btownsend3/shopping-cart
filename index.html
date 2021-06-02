@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/application.js"></script>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <table class="table table-striped">
+        <thead>
+          <h1>Shopping Cart</h1>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="name">Milk</p></td>
+            <td class="price">4</td>
+            <td>
+              <label>QTY
+                <input class="quantity" name="quantity" type="text" placeholder="0"></td>
+              </label>
+            </td>
+            <td><button class="btn btn-primary btn-cancel" name="cancel" type="submit">Cancel</button></td>
+            <td class="item-total"></td>
+          </tr>
+          <tr>
+            <td class="name">Bread</p></td>
+            <td class="price">3.55</td>
+            <td>
+              <label>QTY
+                <input class="quantity" name="quantity" type="text" placeholder="0"></td>
+              </label>
+            </td>
+            <td><button class="btn btn-primary btn-cancel" name="cancel" type="submit">Cancel</button></td>
+            <td class="item-total"></td>
+          </tr>
+          <tr>
+            <td class="name">eggs</p></td>
+            <td class="price">1.99</td>
+            <td>
+              <label>QTY
+                <input class="quantity" name="quantity" type="text" placeholder="0"></td>
+              </label>
+            </td>
+            <td><button class="btn btn-primary btn-cancel" name="cancel" type="submit">Cancel</button></td>
+            <td class="item-total"></td>
+          </tr>
+          <tr>
+            <td class="name">Bananas</p></td>
+            <td class="price">0.59</td>
+            <td>
+              <label>QTY
+                <input class="quantity" name="quantity" type="text" placeholder="0"></td>
+              </label>
+            </td>
+            <td><button class="btn btn-primary btn-cancel" name="cancel" type="submit">Cancel</button></td>
+            <td class="item-total"></td>
+          </tr>
+          <tr>
+            <td class="name">Avocados</td>
+            <td class="price">1.50</td>
+            <td>
+              <label>QTY
+                <input class="quantity" name="quantity" type="text" placeholder="0"></td>
+              </label>
+            </td>
+            <td><button class="btn btn-primary btn-cancel" name="cancel" type="submit">Cancel</button></td>
+            <td class="item-total"></td>
+          </tr>
+        </tbody>
+      </table>
+      <form id="add">
+        <input id="item-name" type="text" placeholder="Item name" required>
+        <input id="item-price" type="text" placeholder="Price">
+        <input id="item-qty" type="text" placeholder="Quantity">
+        <button class="btn btn-primary btn-sm">Add new item</button> 
+      </form>  
+      <h2 id="total"></h2>
+    </div>
+  </body>
+</html>
